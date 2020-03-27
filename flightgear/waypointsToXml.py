@@ -4,8 +4,6 @@ if len(sys.argv)!=2:
     print("python waypointsToXml.py <file>")
     exit()
 
-print(str(sys.argv))
-
 input_filename = sys.argv[1]
 
 num_wp = 0
@@ -24,11 +22,15 @@ with open(input_filename) as input_data:
             this_lon = this_data[9]
             if this_lat!=0.0 and this_lon!=0.0:
                 if num_wp>0:
-                    print('<wp n={}>'.format(num_wp))
+                    print('    <wp n={}>'.format(num_wp))
                 else:
-                    print('<wp>')
-                print('<type type="string">basic</type>')
-                print('<lon type="double">{}</lon>'.format(this_lon))
-                print('</wp>')
+                    print('    <wp>')
+                print('      <type type="string">basic</type>')
+                print('      <ident type="string">WP{}</ident>'.format(num_wp))
+                print('      <lon type="double">{}</lon>'.format(this_lon))
+                print('      <lat type="double">{}</lat>'.format(this_lat))
+                print('    </wp>')
                 num_wp = num_wp+1
                 
+print("""  </route>
+</PropertyList>""")
