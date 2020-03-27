@@ -8,10 +8,27 @@ print(str(sys.argv))
 
 input_filename = sys.argv[1]
 
+num_wp = 0
+
+print("""<PropertyList>
+  <version type="int">2</version>
+  <route>""")
+
 with open(input_filename) as input_data:
     all_data = input_data.read()
     all_lines = all_data.split("\n")
     for this_line in all_lines[1:]:
-        print(this_line)
         this_data = this_line.split("\t")
-        print(this_data)
+        if len(this_data)>8:
+            this_lat = this_data[8]
+            this_lon = this_data[9]
+            if this_lat!=0.0 and this_lon!=0.0:
+                if num_wp>0:
+                    print('<wp n={}>'.format(num_wp))
+                else:
+                    print('<wp>')
+                print('<type type="string">basic</type>')
+                print('<lon type="double">{}</lon>'.format(this_lon))
+                print('</wp>')
+                num_wp = num_wp+1
+                
