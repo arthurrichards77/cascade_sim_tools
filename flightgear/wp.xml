@@ -5,21 +5,27 @@
   <route>
     <wp>
       <type type="string">basic</type>
-      <ident type="string">W002N051</ident>
-      <lon type="double">-2</lon>
-      <lat type="double">51</lat>
+      <ident type="string">ALPHA</ident>
+      <lon type="double">-2.71774290</lon>
+      <lat type="double">51.50361380</lat>
     </wp>
     <wp n="1">
       <type type="string">basic</type>
-      <ident type="string">W003N051</ident>
-      <lon type="double">-3</lon>
-      <lat type="double">51</lat>
+      <ident type="string">BRAVO</ident>
+      <lon type="double">-2.59277340</lon>
+      <lat type="double">51.51985260</lat>
     </wp>
     <wp n="2">
       <type type="string">basic</type>
-      <ident type="string">W002N052</ident>
-      <lon type="double">-2</lon>
-      <lat type="double">52</lat>
+      <ident type="string">CHALI</ident>
+      <lon type="double">-2.55706790</lon>
+      <lat type="double">51.44994190</lat>
+    </wp>
+    <wp n="3">
+      <type type="string">basic</type>
+      <ident type="string">HOMER</ident>
+      <lon type="double">-2.62779200</lon>
+      <lat type="double">51.45454200</lat>
     </wp>
   </route>
 </PropertyList>
