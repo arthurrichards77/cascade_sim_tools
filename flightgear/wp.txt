@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+  <version type="int">2</version>
+  <route>
+    <wp>
+      <type type="string">basic</type>
+      <ident type="string">W002N051</ident>
+      <lon type="double">-2</lon>
+      <lat type="double">51</lat>
+    </wp>
+    <wp n="1">
+      <type type="string">basic</type>
+      <ident type="string">W003N051</ident>
+      <lon type="double">-3</lon>
+      <lat type="double">51</lat>
+    </wp>
+    <wp n="2">
+      <type type="string">basic</type>
+      <ident type="string">W002N052</ident>
+      <lon type="double">-2</lon>
+      <lat type="double">52</lat>
+    </wp>
+  </route>
+</PropertyList>
