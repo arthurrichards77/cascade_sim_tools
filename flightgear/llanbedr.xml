@@ -31,7 +31,7 @@
       <ident type="string">EGOD</ident>
       <lon type="double">-4.124834668</lon>
       <lat type="double">52.80972866</lat>
-      <radial-deg type="double">88.29473828</radial-deg>
+      <radial-deg type="double">270</radial-deg>
       <distance-nm type="double">3</distance-nm>
     </wp>
   </route>
