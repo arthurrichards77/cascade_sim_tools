@@ -1,3 +1,6 @@
 [submodule "flightgear/aircraft/Grob-G109"]
 	path = flightgear/aircraft/Grob-G109
 	url = https://github.com/arthurrichards77/Grob-G109.git
+[submodule "flightgear/fgms/fgms-src"]
+	path = flightgear/fgms/fgms-src
+	url = https://github.com/arthurrichards77/fgms.git
