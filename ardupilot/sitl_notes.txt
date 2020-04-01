@@ -1,0 +1,30 @@
+# Getting Started with Ardupilot Software-in-the-Loop Simulator
+
+## Through Mission Planner
+
+Install Mission Planner and launch it
+
+Move to mission Flight Plan screen and use Load WP File button to load bridge_low.waypoints
+Click 'Yes' to reset home - you should now see a mission
+
+Move to Simulation screen and click Multirotor
+(might need to approve Firewall access at this point)
+should bounce you over to the Flight Data screen
+Check green 'connected' plugs at top right and use status tab bottom left to see numbers changing
+Should see a little quadrotor icon over middle of the bridge
+
+Pop back to Flight Plan and click 'Write WPs'
+Then go back to Flight Data and should see the mission
+
+Move to actions tab at bottom left.
+In quick succession: click arm, right click map, choose take-off, and enter 25 as altitude
+Artificial horizon at top left should wobble and show climb to altitude
+
+In actions tab, click Auto.
+Should see drone follow mission - speed 3m/s
+
+### Companion computers
+
+On-board: TCP port 5762 or 5763 to talk straight to drone (sim)
+
+Ground: in Mission Planner, press Ctrl+F, click Mavlink, choose 'TCP Host - 14550' and enable 'Write access'.  Click start.  Change port if you like.  Then use this port to talk to the drone through Mission Planner.
