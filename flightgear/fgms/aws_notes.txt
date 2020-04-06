@@ -7,10 +7,13 @@ T'was a bit of a pain getting FGMS (the server) installed and configured on AWS.
 5. git clone fgms
 6. In the CMakeLists file, change the first project to say "PROJECT (fgms C CXX)" [avoid pthread bug]
    Source: https://stackoverflow.com/questions/15193785/how-to-get-cmake-to-recognize-pthread-on-ubuntu
-7. Follow the FGMS install instructions
+7. Follow the FGMS install instructions, including sudo make install
 8. Configure the server.address line in the config to be the *private* IP address from ifconfig
    OR use the handy utility provided, which will insert the current eth0 IP address into the config template
 9. Run the thing with the config file just edited: fgms -c cascade.conf
    OR use the launch_fgms.sh script
    Runs as a Daemon by default, which means it'll keep running when you logout of the SSH session
 11. telnet to the *public* IP address on port 5001 and you should get a little status message
+ == Next bits get it to start automatically when you start the server ==
+12. Copy the cascade.conf configuration file to /usr/local/etc/fgms.conf
+13. Edit the /etc/crontab file and add a line "@reboot root fgms"
