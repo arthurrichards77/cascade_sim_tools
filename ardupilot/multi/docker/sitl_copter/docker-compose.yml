@@ -1,14 +1,14 @@
 version: "3.8"
 services:
   uav1:
-    build: .
+    image: arthur/sitl-copter
     environment:
       SYSID: 1
   uav2:
-    build: .
+    image: arthur/sitl-copter
     environment:
       SYSID: 2
   uav3:
-    build: .
+    image: arthur/sitl-copter
     environment:
       SYSID: 3
