@@ -1,14 +1,4 @@
 version: "3.8"
 services:
-  uav1:
+  copter:
     build: .
-    environment:
-      SYSID: 1
-  uav2:
-    build: .
-    environment:
-      SYSID: 2
-  uav3:
-    build: .
-    environment:
-      SYSID: 3
