@@ -16,6 +16,8 @@ to UDP port 14553 to view and control your drones.
 
 ## Using Docker
 
+> Note: further development of this activity has been moved to a [different repository](https://github.com/arthurrichards77/ardupilot_sitl_docker).
+
 Experimental support has been developed for doing this in [Docker](https://www.docker.com/), which offers natural scalability via its container framework.  Credit to Eduardo R. B. Marques whose [Ardupilot Docker image](https://hub.docker.com/r/edrdo/ardupilot-sitl-docker) has been the starting point for mine.  To get started:
 1. [Install docker](https://docs.docker.com/get-docker/) and [docker-compose](https://docs.docker.com/compose/install/).
 2. Navigate to the `update` subfolder and run `docker build -t arthur/ardupilot .`.  This produces a Docker image with the latest Ardupilot source, supporting the 
