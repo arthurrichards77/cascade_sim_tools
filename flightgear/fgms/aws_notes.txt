@@ -16,3 +16,7 @@ T'was a bit of a pain getting FGMS (the server) installed and configured on AWS.
  == Next bits get it to start automatically when you start the server ==
 11. Copy the cascade.conf configuration file to /usr/local/etc/fgms.conf
 12. Edit the /etc/crontab file and add a line "@reboot root fgms"
+
+Update:
+ - instructions elsewhere (docker) suggest that you can just use 0.0.0.0 as the server IP address, simplifying these instructions
+ - there is an official FGMS docker image, which might be an easier route to achieving this
